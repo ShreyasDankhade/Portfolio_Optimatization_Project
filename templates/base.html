@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio Optimization</title>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/main.css') }}"
+		/>
+	</head>
+	<body>
+		<div class="main">
+			<div class="header">
+				<nav>
+					<div class="logo">
+						<img
+							src="/static/img/logo.png"
+							alt="logo"
+							width="130px"
+							height="130px"
+						/>
+					</div>
+					<div class="navbar">
+						<ul>
+							<li><a href="#">Market</a></li>
+							<li><a href="#">Exchange</a></li>
+							<li><a href="#">Wallets</a></li>
+							<li class="back_button">
+								<a href="#">Back</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="main-body">
+				<div class="left_side">
+					<div class="title_1">Optimize Your Portfolio with us</div>
+					<div class="title_2">
+						Explore the world full of digital currency easily on this web app.
+						Buy, Sell & Optimize crypto-currencies easily on this web app
+					</div>
+
+					<div class="feature-table">
+						<table>
+							<tbody>
+								<tr>
+									<td>Reliability</td>
+									<td>Security</td>
+									<td>Ethereum Network</td>
+								</tr>
+								<tr>
+									<td>Blockchain</td>
+									<td>Low Fees</td>
+									<td>Web3 Technology</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="vl_1"></div>
+				<div class="vl_2"></div>
+				<div class="vl_3"></div>
+				<!-- left ends -->
+				<div class="right-side">
+					<div class="graph">
+						<img
+							src="data:image/png;base64,{{ get_chart }}"
+							alt="Chart"
+							height="275px"
+							width="548px"
+						/>
+					</div>
+					<div class="content">
+						<table>
+							<tbody>
+								<tr>
+									<td>Today's Date: <br />{{today}}</td>
+									<td>
+										Variance Before Optimization:<br />
+										{{percent_Variance_be4_opt}}
+									</td>
+									<td>
+										Volatility Before Optimization:<br />
+										{{percent_Volatility_be4_opt}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										Return Before Optimization:<br />
+										{{percent_Return_be4_opt}}
+									</td>
+									<td>
+										Return After Optimization :<br />
+										{{expected_annual_return}}%
+									</td>
+									<td>
+										Annual Volatility :<br />
+										{{annual_volatility}}%
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										Sharpe Ratio:<br />
+										{{sharpe_ratio}}
+									</td>
+									<td>
+										Allocation Output:<br />
+										{{allocation_output}}
+									</td>
+									<td>Balance Left: <br />{{leftover_bal}}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="vr_1"></div>
+			<div class="vr_2"></div>
+			<div class="vr_3"></div>
+			<div class="vr_4"></div>
+
+			<!-- <div class="">
+			<pre id=percentVariance >prer : {{percentVariance}}</p>
+			<div class="image">{%block image %} {% endblock %}</div>
+			<div class="content">{%block content %} {% endblock %}</div>
+		</div>
+
+		</div> -->
+		</div>
+	</body>
+</html>
