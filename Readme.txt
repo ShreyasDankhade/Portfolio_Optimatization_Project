@@ -1,4 +1,4 @@
-Step 1 - Activate Virtual Environment using the command `source venv/bin/activate`
+Step 1 - Install Required Python Libraries
 
 Step 2 - Run the Python file `portfolio_app.py` using the command 
                     - For Windows : `python .\portfolio_app.py`
