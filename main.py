@@ -60,10 +60,10 @@ def index():
     percent_Volatility = str(round(portfolio_volatility, 2) * 100) + '%'
     percent_Return = str(round(annualPortfolioReturn, 2) * 100) + '%'
 
-    mu = expected_returns.mean_historical_return(data)
-    S = risk_models.sample_cov(data)
+    expectedReturn= expected_returns.mean_historical_return(data)
+    risk = risk_models.sample_cov(data)
 
-    ef = EfficientFrontier(mu, S)
+    ef = EfficientFrontier(expectedReturn, risk)
     weights = ef.max_sharpe()
     cleaned_weights = ef.clean_weights()
     after_optimization = ef.portfolio_performance(verbose=True)
