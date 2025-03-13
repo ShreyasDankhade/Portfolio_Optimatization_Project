@@ -16,9 +16,7 @@ The **Portfolio Optimization Project** is designed to help investors allocate th
   - NumPy
   - Pandas
   - Matplotlib
-  - SciPy
   - CVXPY
-  - Seaborn
 
 ## 📥 Installation
 1. Clone the repository:
@@ -41,9 +39,14 @@ The **Portfolio Optimization Project** is designed to help investors allocate th
 ## 📂 Project Structure
 ```md
 Portfolio_Optimatization_Project/
-│── data/               # Sample datasets for portfolio analysis
-│── src/                # Python scripts for optimization models
-│── results/            # Generated reports and figures
+│── static/
+│  │── css/
+│  │  │── main.css      # CSS file
+│  │── img/
+│  │  │── logo.png      # Logo image
+│── templates/
+│  │── base.html
+│── main.py             # Python scripts for optimization models
 │── requirements.txt    # Dependencies
 │── README.md           # Project documentation
 ```
@@ -53,7 +56,7 @@ Portfolio_Optimatization_Project/
 - Generates an efficient frontier showing risk vs. return trade-offs.
 
 ### Monte Carlo Simulation
-- Runs thousands of random portfolio allocations and visualizes the results.
+- Runs random portfolio allocations and visualizes the results.
 
 ### Sharpe Ratio Optimization
 - Finds the portfolio with the highest Sharpe ratio to maximize returns per unit of risk.
@@ -62,12 +65,9 @@ Portfolio_Optimatization_Project/
 - **Shreyas Dankhade** (Repository Owner)
 - Contributions are welcome! Feel free to fork and submit pull requests.
 
-## 📜 License
-This project is licensed under the MIT License. See `LICENSE` for details.
-
 ## 🙌 Acknowledgments
 - Inspired by **Markowitz’s Modern Portfolio Theory (MPT)**
 - Uses concepts from quantitative finance and investment strategy development.
 
 ## 📧 Contact
-For any inquiries or collaboration, feel free to reach out via GitHub issues or discussions.
+For questions or support, contact Shreyas Dankhade at shreyasdankhade75@gmail.com.
