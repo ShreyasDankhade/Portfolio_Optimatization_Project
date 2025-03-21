@@ -17,6 +17,7 @@ The **Portfolio Optimization Project** is designed to help investors allocate th
   - Pandas
   - Matplotlib
   - CVXPY
+  - Flask
 
 ## 📥 Installation
 1. Clone the repository:
